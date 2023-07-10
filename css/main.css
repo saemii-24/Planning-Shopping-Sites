@@ -64,8 +64,6 @@ h3 {
     stroke-linejoin: round;
     stroke-miterlimit: 10;
     stroke-dasharray: 1000px;
-
-
 }
 
 #slider:hover #arrow-box {
@@ -75,7 +73,6 @@ h3 {
 
 @keyframes stroke-animation {
     from {
-
         stroke-dashoffset: -580px;
     }
 
@@ -162,7 +159,6 @@ h3 {
     height: 60px;
     left: 34px;
     bottom: 30px;
-
 }
 
 #more_button_all_MD::after {
@@ -174,14 +170,12 @@ h3 {
     border-radius: 30px;
     transition: width 0.5s, color 0.5s;
     left: 0px;
-
 }
 
 #more_button_all_MD:hover::after {
     content: "";
     position: absolute;
     width: 190px;
-
 }
 
 #more_button_all_MD:hover>#more_button_text_MD {
@@ -772,13 +766,15 @@ p {
     transition: height 0.4s ease;
     overflow: hidden;
 }
-
+.option_article:hover {
+    height: 430px;
+    cursor: pointer;
+}
 .option_button {
     display: flex;
     margin-top: 60px;
     column-gap: 10px;
 }
-
 .option_button button {
     background-color: white;
     color: #232722;
@@ -787,19 +783,12 @@ p {
     border-radius: 50px;
     font-size: 16px;
     font-weight: 500;
-
 }
-
 .option_button button:hover {
     background-color: #232722;
     color: white;
-    
 }
 
-.option_article:hover {
-    height: 430px;
-    cursor: pointer;
-}
 
 .title_line>h3 {
     color: #232722;
@@ -962,20 +951,16 @@ p {
     margin: 6px 0px 0px 105px;
     z-index: 0;
     position: relative;
-
 }
 
 #company:hover h2::before {
     width: 83%;
     opacity:1;
-    
-
 }
 
 #company:hover h2::after {
     width: 90%;
     opacity:1;
-
 }
 
 #company_vision>h2::after {
