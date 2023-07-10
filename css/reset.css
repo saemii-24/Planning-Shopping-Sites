@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'SUITE', sans-serif;;
+    color:#232722;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:#232722;
+}
+
+p,ul,ol,li,div{
+    margin:0;
+    padding:0;
+}

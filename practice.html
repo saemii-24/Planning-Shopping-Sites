@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+html, body {
+height: 100%;
+}
+
+.coloring{
+background:red !important;
+}
+.coloring2{
+background:blue !important;
+}
+</style>
+</head>
+<body>
+
+<div style="background: #eeeeee; width: 100%; height: 500px;">
+</div>
+<div style="width: 100%; height: 300%;">
+<div id="my-element" style="background: seagreen; margin-top: 200px; width: 200px; height: 200px;">
+hwody partna
+</div>
+<div id="my-element2" style="background: seagreen; margin-top: 500px; width: 200px; height: 200px;">
+hwody partna
+</div>
+</div>
+
+<script>
+const element = document.getElementById('my-element');
+const element2 = document.getElementById('my-element2');
+const rule = window.innerHeight>element.getBoundingClientRect().top||
+element.getBoundingClientRect().bottom>0;
+
+document.addEventListener('scroll',checkElement);
+document.addEventListener('scroll',checkElement2);
+
+function checkElement(){
+if(rule===true){
+element.classList.add('coloring');
+}else{
+element.classList.remove('coloring');
+}
+}
+
+function checkElement2(){
+if(rule===true){
+element2.classList.add('coloring2');
+}else{
+element2.classList.remove('coloring2');
+}
+}
+
+
+// const element2 = document.getElementById('my-element2');
+// document.addEventListener('scroll',checkElement2);
+// function checkElement2(){
+// if(window.innerHeight>element2.getBoundingClientRect().top&&
+// element2.getBoundingClientRect().bottom>0){
+
+// // element2.style.background="red";
+// element2.classList.add('.coloring2');
+// }else{
+// element2.classList.remove('.coloring2');
+// }
+// }
+
+
+// // document.addEventListener('scroll', function() {
+// //  if(window.scrollY>600){
+// //   console.log('600이상!');
+// //    checkElement();
+// //    }
+// // });
+
+</script>
+</body>
+</html>

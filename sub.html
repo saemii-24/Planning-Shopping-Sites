@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning</title>
+    <link rel="icon" href="img/main/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUITE/fonts/static/woff2/SUITE.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="https://kit.fontawesome.com/c94ae1f430.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="modal_all">
+        <div id="modal">
+            <i id="close_icon_modal" class="fa-sharp fa-solid fa-xmark" style="color: #232722;"></i>
+            <p id="modal_text">선택하신 상품이 장바구니에 담겼습니다.<br>장바구니로 이동하시겠습니까?</p>
+            <button id="go_shopping_bag">장바구니 이동</button>
+            <button id="continue_shopping">쇼핑 계속하기</button>
+        </div>
+        <div id="modal_background"></div>
+    </div>
+    <header>
+        <div class="container" id="header_container">
+            <div id="logo">
+                <div id="black_logo_background">
+                    <img id="logo_img" src="img/main/logo.png" alt="logo">
+                </div>
+                <p id="logo_text">PLANNING</p>
+            </div>
+
+            <div id="search">
+                <input id="search_input" type="text" placeholder="매력적인 반려식물을 찾아보세요.">
+                <div>
+                    <img src="img/main/search.png" alt="search_icon">
+                </div>
+            </div>
+            <nav>
+                <ul id="nav_ul">
+                    <li><a href="#">전체상품</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <article>
+        <div class="container">
+            <section id="article_top_left">
+                <ul id="article_nav_ul">
+                    <li><a href="#">묘목&#183;인테리어</a></li>
+                    <li><a href="#">작약</a></li>
+                </ul>
+                <div id="article_top_left_grid">
+                    <div id="article_top_pic_1">
+                        <img src="img/sub/article_top_pic_1.jpg" alt="article_top_pic_1">
+                    </div>
+                    <div id="article_top_pic_align">
+                        <div id="article_top_pic_2">
+                            <img src="img/sub/article_top_pic_2.jpg" alt="article_top_pic_2">
+                        </div>
+                        <div id="article_top_pic_3">
+                            <img src="img/sub/article_top_pic_3.jpg" alt="article_top_pic_3">
+                        </div>
+                    </div>
+                    <div id="article_top_pic_4">
+                        <img src="img/sub/article_top_pic_4.jpg" alt="article_top_pic_4">
+                    </div>
+                </div>
+            </section>
+            <section id="article_top_right">
+                <div id="article_top_sticky">
+                    <h6>Paeonia</h6>
+                    <div id="article_top_right_title">
+                        <h1>작약</h1>
+                        <div id="article_top_heart">
+                            <svg id="heart_click" width="34" height="34" viewBox="0 0 34 34" fill="white">
+                                <circle id="heart_circle" cx="17" cy="17" r="16.25" stroke="#232722" stroke-width="1" />
+                                <path id="heart_heart"
+                                    d="M10.798 17.8578L10.7979 17.8577C9.40069 16.4605 9.40069 14.1951 10.7979 12.7979C12.1952 11.4006 14.4605 11.4006 15.8578 12.7979L16.4695 13.4096L16.9998 13.9399L17.5302 13.4096L18.1419 12.7979C19.5391 11.4007 21.8045 11.4007 23.2017 12.7979C24.5989 14.1952 24.5989 16.4605 23.2017 17.8578L23.2017 17.8578L17.3601 23.7C17.36 23.7 17.36 23.7 17.36 23.7C17.1612 23.8988 16.839 23.8987 16.6402 23.7L12.6937 19.7535L12.6938 19.7535L12.6873 19.7472C12.6693 19.7296 12.6514 19.7119 12.6335 19.694C12.6335 19.694 12.6335 19.6939 12.6334 19.6939L10.798 17.8578Z"
+                                    stroke="#232722" stroke-width="1" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="article_top_star">
+                        <h5 id="article_star">&#9733;&#9733;&#9733;&#9733;&#9733;</h5>
+                        <h5 id="star_point">4.8</h5>
+                    </div>
+                    <h3 id="article_top_price">29,000원</h3>
+                    <div id="article_right_caution">
+                        <ul id="caution_left">
+                            <li>관리 난이도</li>
+                            <li>꽃말</li>
+                            <li>추천 환경</li>
+                            <li>설명</li>
+                        </ul>
+                        <ul id="caution_right">
+                            <li>보통~다소 높음</li>
+                            <li>수줍음, 행복한 결혼</li>
+                            <li>16~25&#8451;의 온도, 50~70&#37;의 습도</li>
+                            <li>꽃의 재상이란 뜻으로 화상이라고 불리었던 작약은<br>
+                                진한 향기와 다채롭고 아름다운 꽃잎이 특징입니다.
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="article_option_delivery">
+                        <p id="tooltip">도서산간의 경우 주문 전<br>문의 부탁드립니다.</p>
+                        <h5 class="option_title">배송방법</h5>
+                        <p id="text_with_tooltip">페이지 하단 배송정보 참고</p>
+                    </div>
+                    <div id="article_option_color">
+                        <h5 class="option_title">색상</h5>
+                        <form id="color_checkbox">
+                            <input value="white" name="color_chk" type="radio" class="color_radio" id="color_white">
+                            <label class="color_box color_white" for="color_white"></label>
+                            <input value="red" name="color_chk" type="radio" class="color_radio" id="color_red">
+                            <label class="color_box color_red" for="color_red"></label>
+                            <input value="pink" name="color_chk" type="radio" class="color_radio" id="color_pink">
+                            <label class="color_box color_pink" for="color_pink"></label>
+                        </form>
+                    </div>
+                    <div id="article_option_quantity">
+                        <h5 class="option_title">작약</h5>
+                        <i id="close_icon" class="fa-sharp fa-solid fa-xmark" style="color: #232722;"></i>
+                        <p id="option_color">색상: <span id="color_select"></span></p>
+                        <div id="quantity_button">
+                            <button id="quantity_minus">-</button>
+                            <p id="quantity_current">1</p>
+                            <button id="quantity_plus">+</button>
+                        </div>
+                        <p id="option_price">29,000원</p>
+                    </div>
+                    <hr id="option_line">
+                    <div id="calculate_price">
+                        <h5 class="option_title">주문금액</h5>
+                        <h1><span class="price">0</span>원</h1>
+                    </div>
+                    <div id="buy_button">
+                        <button id="buy_now">바로구매</button>
+                        <button id="shopping_bag">장바구니</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </article>
+    <div id="article_nav">
+        <div class="container">
+            <div id="navigation_align">
+                <div id="nav_product" class="navigation navigation_line"><a href="#article_middle_all">상품정보</a></div>
+                <div id="nav_review" class="navigation"><a id="review_anchor" href="#review">리뷰(138)</a></div>
+                <div id="nav_qanda" class="navigation"><a href="#qanda_anchor">Q&#38;A</a></div>
+                <div id="nav_delivery" class="navigation"><a href="#delivery_anchor">배송&sol;환불</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="article_middle_all">
+        <div id="article_middle">
+            <div id="middle_container">
+                <video id="middle_pic_1" autoplay loop muted>
+                    <source src="img/sub/middle_pic_1.mp4" type="video/mp4">
+                </video>
+                <div id="flower_description">
+                    <h6>꽃의 재상</h6>
+                    <h3>작약</h3>
+                    <p>마치 레이스를 둥글게 모아 놓은 듯 화려하게 피어나는 작약은,<br>
+                        꽃이 함지박처럼 크다 하여 '함박꽃'이라고 불리기도 합니다.<br>
+                        고대에는 작약의 뿌리를 약용으로 사용하였으며,<br>
+                        현재는 결혼식 부케로도 많은 사랑을 받고 있습니다. </p>
+                </div>
+                <img src="img/sub/middle_pic_2.jpg" alt="middle_pic_2">
+                <table>
+                    <caption>작약의 추천환경</caption>
+                    <tr>
+                        <th>주변환경</th>
+                        <td>햇빛이 잘 들고, 통풍이 잘 되는 장소</td>
+                    </tr>
+                    <tr>
+                        <th>온도&#47;습도</th>
+                        <td>16~25&#8451;의 온도, 50~70&#37;의 습도</td>
+                    </tr>
+                    <tr>
+                        <th>물의 주기</th>
+                        <td>겉 흙이 말랐을 때 흙이 충분히 적셔질 정도로 주는 것이 좋습니다.</td>
+                    </tr>
+                    <tr>
+                        <th>주의사항</th>
+                        <td>추운 환경에서도 잘 자라는 편이나, 실내&#47;실외 온도차로 냉해를 입을 수 있습니다.</td>
+                    </tr>
+                </table>
+                <img src="img/sub/middle_pic_3.jpg" alt="middle_pic_3">
+                <h3 id="middle_pic_title">꽃잎 색상</h3>
+                <div id="middle_pic_button">
+                    <button class="select_color_button" id="white_button">하양색</button>
+                    <button class="select_color_button" id="red_button">빨강색</button>
+                    <button class="select_color_button" id="pink_button">분홍색</button>
+                </div>
+                <div id="middle_pic_white">
+                    <div id="middle_pic_align_first_left">
+                        <img src="img/sub/middle_pic_white_1.jpg" alt="middle_pic_white_1">
+                        <div id="middle_pic_align_first_right">
+                            <img src="img/sub/middle_pic_white_2.jpg" alt="middle_pic_white_2">
+                            <img src="img/sub/middle_pic_white_3.jpg" alt="middle_pic_white_3">
+                        </div>
+                    </div>
+                </div>
+                <div id="middle_pic_red">
+                    <img src="img/sub/middle_pic_red_1.jpg" alt="middle_pic_red_1">
+                    <div class="middle_pic_align_second">
+                        <img src="img/sub/middle_pic_red_2.jpg" alt="middle_pic_red_2">
+                        <img src="img/sub/middle_pic_red_3.jpg" alt="middle_pic_red_3">
+                    </div>
+                </div>
+                <div id="middle_pic_pink">
+                    <div id="middle_pic_align_third_left">
+                        <img src="img/sub/middle_pic_pink_1.jpg" alt="middle_pic_pink_1">
+                        <div id="middle_pic_align_third_right">
+                            <img src="img/sub/middle_pic_pink_2.jpg" alt="middle_pic_pink_2">
+                            <img src="img/sub/middle_pic_pink_3.jpg" alt="middle_pic_pink_3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="article_bottom">
+            <div class="container">
+                <h3>다른 식물집사가 작약과 함께 본 식물</h3>
+                <div id="recommend_box">
+                    <div id="recommend_align">
+                        <div class="recommend_pic_box"> <img class="recommend_pic" src="img/sub/recommend_pic_1.jpg"
+                                alt="recommend_pic_1"></div>
+                        <div class="recommend_pic_box"> <img class="recommend_pic" src="img/sub/recommend_pic_2.jpg"
+                                alt="recommend_pic_2"></div>
+                        <div class="recommend_pic_box"> <img class="recommend_pic" src="img/sub/recommend_pic_3.jpg"
+                                alt="recommend_pic_3"></div>
+                        <div class="recommend_pic_box"> <img class="recommend_pic" src="img/sub/recommend_pic_4.jpg"
+                                alt="recommend_pic_4"></div>
+                        <div class="recommend_pic_box"> <img class="recommend_pic" src="img/sub/recommend_pic_5.jpg"
+                                alt="recommend_pic_5"></div>
+                        <div class="recommend_pic_box"> <img class="recommend_pic" src="img/sub/recommend_pic_6.jpg"
+                                alt="recommend_pic_6"></div>
+                        <div class="recommend_pic_box"> <img class="recommend_pic" src="img/sub/recommend_pic_7.jpg"
+                                alt="recommend_pic_7"></div>
+                        <div class="recommend_pic_box"> <img class="recommend_pic" src="img/sub/recommend_pic_8.jpg"
+                                alt="recommend_pic_8"></div>
+                    </div>
+                </div>
+                <button id="recommend_left"><i class="fa-solid fa-chevron-left" style="color: #232722;"></i></button>
+                <button id="recommend_right"><i class="fa-solid fa-chevron-right" style="color: #232722;"></i></button>
+            </div>
+        </div>
+    </div>
+    <div id="review">
+        <div class="container">
+            <div class="left_container">
+                <div class="left_container_title">
+                    <h3>리뷰</h3>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div class="right_container">
+                <div id="right_container_title">
+                    <div id="left_star">
+                        <div id="left_star_point"><i class="fa-solid fa-star"
+                                style="color: #232722;"></i><span>&nbsp;4.8</span></div>
+                        <button id="left_star_button">리뷰 작성하기</button>
+                    </div>
+                    <div id="right_star">
+                        <p>
+                            <span class="star_yellow">&#9733;&#9733;&#9733;&#9733;&#9733;</span>&nbsp;&nbsp;&nbsp;
+                            <meter min="0" max="100" value="98"></meter>
+                        </p>
+                        <p>
+                            <span class="star_yellow">&#9733;&#9733;&#9733;&#9733;</span><span
+                                class="star_gray">&#9733;</span>&nbsp;&nbsp;&nbsp;
+                            <meter min="0" max="100" value="95"></meter>
+                        </p>
+                        <p>
+                            <span class="star_yellow">&#9733;&#9733;&#9733;</span><span
+                                class="star_gray">&#9733;&#9733;</span>&nbsp;&nbsp;&nbsp;
+                            <meter min="0" max="100" value="2"></meter>
+                        </p>
+                        <p>
+                            <span class="star_yellow">&#9733;&#9733;</span><span
+                                class="star_gray">&#9733;&#9733;&#9733;</span>&nbsp;&nbsp;&nbsp;
+                            <meter min="0" max="100" value="0"></meter>
+                        </p>
+                        <p>
+                            <span class="star_yellow">&#9733;</span><span
+                                class="star_gray">&#9733;&#9733;&#9733;&#9733;</span>&nbsp;&nbsp;&nbsp;
+                            <meter min="0" max="100" value="0"></meter>
+                        </p>
+                    </div>
+                </div>
+                <div class="customer_review">
+                    <div class="customer_review_left">
+                        <div class="profile_pic"></div>
+                        <div class="profile_name">
+                            <p class="customer_name">식물러버</p>
+                            <p class="customer_level">Lv.1</p>
+                        </div>
+                    </div>
+                    <div class="customer_review_right">
+                        <div class="customer_review_title">
+                            <div class="customer_review_star">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <div class="review_date">2030.04.03</div>
+                        </div>
+                        <p class="hashtag">&#35;초보집사 &nbsp;&#35;북향베란다</p>
+                        <p class="review">인터넷으로 식물 사보는 건 처음이라 사실 큰 기대안하고 저렴해서 한 번 주문해본건데<br>
+                            너무 예뻐요! 추천합니다!!</p>
+                    </div>
+                </div>
+                <div class="customer_review">
+                    <div class="customer_review_left">
+                        <div class="profile_pic"></div>
+                        <div class="profile_name">
+                            <p class="customer_name">플랜트</p>
+                            <p class="customer_level">Lv.2</p>
+                        </div>
+                    </div>
+                    <div class="customer_review_right">
+                        <div class="customer_review_title">
+                            <div class="customer_review_star">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <div class="review_date">2030.03.29</div>
+                        </div>
+                        <p class="hashtag">&#35;초보집사 &nbsp;&#35;남향거실</p>
+                        <p class="review">개인적으로 꽃의 왕이라고 하는 모란보단 작약이 더 예쁘더라구요~ <br>분홍색으로 구매했는데 너무 예쁘네요~</p>
+                    </div>
+                </div>
+                <div class="customer_review">
+                    <div class="customer_review_left">
+                        <div class="profile_pic"></div>
+                        <div class="profile_name">
+                            <p class="customer_name">플라워</p>
+                            <p class="customer_level">Lv.1</p>
+                        </div>
+                    </div>
+                    <div class="customer_review_right">
+                        <div class="customer_review_title">
+                            <div class="customer_review_star">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <div class="review_date">2030.03.12</div>
+                        </div>
+                        <p class="hashtag">&#35;초보집사 &nbsp;&#35;남향안방</p>
+                        <p class="review">키우는 난이도가 중급이라고 해서 걱정되지만 너무 예뻐서 구매했어요.<br>
+                            동봉된 설명서 보고 잘 키워 보겠습니다.</p>
+                    </div>
+                </div>
+                <div class="customer_review">
+                    <div class="customer_review_left">
+                        <div class="profile_pic"></div>
+                        <div class="profile_name">
+                            <p class="customer_name">하나</p>
+                            <p class="customer_level">Lv.4</p>
+                        </div>
+                    </div>
+                    <div class="customer_review_right">
+                        <div class="customer_review_title">
+                            <div class="customer_review_star">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <div class="review_date">2030.03.02</div>
+                        </div>
+                        <p class="hashtag">&#35;베테랑집사 &nbsp;&#35;정원</p>
+                        <p class="review">벌써 플래닝에서만 10번째 구매입니다. 정원에 심으니 너무 예쁘고 만족스럽습니다.</p>
+                    </div>
+                </div>
+                <div class="customer_review">
+                    <div class="customer_review_left">
+                        <div class="profile_pic"></div>
+                        <div class="profile_name">
+                            <p class="customer_name">꽃이피어나</p>
+                            <p class="customer_level">Lv.2</p>
+                        </div>
+                    </div>
+                    <div class="customer_review_right">
+                        <div class="customer_review_title">
+                            <div class="customer_review_star">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <div class="review_date">2030.02.27</div>
+                        </div>
+                        <p class="hashtag">&#35;초보집사 &nbsp;&#35;남향베란다</p>
+                        <p class="review">향기가 진짜 진하네요. 꽃 향기를 좋아해서 전 좋았어요!<br>
+                            그리고 너무예뻐서 보기만 해도 좋아요~</p>
+                    </div>
+                </div>
+                <ul id="qanda_anchor" class="pagination">
+                    <li class="pagination_checked">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="QandA">
+        <div class="container">
+            <div class="left_container">
+                <div class="left_container_title">
+                    <h3>Q&#38;A</h3>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div class="right_container">
+                <ul class="QandA_table">
+                    <li class="question_customer">
+                        <div class="question_customer_title">
+                            <div class="question_finish">답변완료</div>
+                            <div class="question_category">상품</div>
+                            <div class="question_main">혹시 더 큰 사이즈는 없을까요?</div>
+                            <div class="question_name">황**</div>
+                            <div class="question_date">2030.04.02</div>
+                        </div>
+                        <div class="question_customer_detail">
+                            더 큰 사이즈가 있으면 구매하고 싶어서요.<br>추가금 있어도 상관 없습니다.
+                        </div>
+                    </li>
+                    <li class="question_planning">
+                        <div class="question_answer">&#91;플래닝&#93; 혹시 더 큰 사이즈는 없을까요?</div>
+                        <div class="question_answer_detail">안녕하세요. 고객님. 플래닝 고객 담당 매니저 진달래입니다.<br>
+                            안타깝게도, 플래닝의 작약은 상세페이지의 사진과 비슷한 크기만 준비되어 있습니다.<br>
+                            더 자세한 상담이 필요하시면 1:1 고객상담 남겨주시길 바랍니다. 감사합니다.
+                        </div>
+                    </li>
+                    <li class="question_customer">
+                        <div class="question_customer_title">
+                            <div class="question_finish">답변완료</div>
+                            <div class="question_category">상품</div>
+                            <div class="question_main question_lock">어떤 색을 구매해야 할지 잘 모르겠어요.</div>
+                            <div class="question_name">채**</div>
+                            <div class="question_date">2030.03.29</div>
+                        </div>
+                        <div class="question_customer_detail">
+                            <form>
+                                <span class="password_label">비밀번호</span>
+                                <input class="password_input" type="password" name="question_password"
+                                    autocomplete="off">
+                                <button class="password_confirm">확인</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="question_planning">
+                        <div class="question_answer question_lock">&#91;플래닝&#93; 어떤 색을 구매해야 할지 잘 모르겠어요.</div>
+                        <div class="question_answer_detail">
+                            <form>
+                                <span class="password_label">비밀번호</span>
+                                <input class="password_input" type="password" name="question_password"
+                                    autocomplete="off">
+                                <button class="password_confirm">확인</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="question_customer">
+                        <div class="question_customer_title">
+                            <div class="question_finish">답변완료</div>
+                            <div class="question_category">배송</div>
+                            <div class="question_main question_lock">배송 날짜를 예약할 수 있나요?</div>
+                            <div class="question_name">박**</div>
+                            <div class="question_date">2030.03.15</div>
+                        </div>
+                        <div class="question_customer_detail">
+                            <form>
+                                <span class="password_label">비밀번호</span>
+                                <input class="password_input" type="password" name="question_password"
+                                    autocomplete="off">
+                                <button class="password_confirm">확인</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="question_planning">
+                        <div class="question_answer question_lock">&#91;플래닝&#93; 배송 날짜를 예약할 수 있나요?</div>
+                        <div class="question_answer_detail">
+                            <form>
+                                <span class="password_label">비밀번호</span>
+                                <input class="password_input" type="password" name="question_password"
+                                    autocomplete="off">
+                                <button class="password_confirm">확인</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="question_customer">
+                        <div class="question_customer_title">
+                            <div class="question_finish">답변완료</div>
+                            <div class="question_category">배송</div>
+                            <div class="question_main">제주도 지역 배송 문의</div>
+                            <div class="question_name">김**</div>
+                            <div class="question_date">2030.03.02</div>
+                        </div>
+                        <div class="question_customer_detail">
+                            안녕하세요! 제주도 서귀포시로 배송이 되나요?<br>
+                            만약 된다면 배송비도 궁금합니다~
+                        </div>
+                    </li>
+                    <li class="question_planning">
+                        <div class="question_answer">&#91;플래닝&#93; 제주도 지역 배송 문의</div>
+                        <div class="question_answer_detail">안녕하세요. 고객님. 플래닝 고객 담당 매니저 수선화입니다.<br>
+                            제주도 모든 지역 배송 가능하며 배송 도착까지 3~4일 소요됩니다.<br>
+                            다만 제주도의 경우 3,000원의 추가 배송비가 발생하는점, 양해 부탁드립니다.<br>
+                            더 자세한 상담이 필요하시면 1:1 고객상담 남겨주시길 바랍니다. 감사합니다.
+                        </div>
+                    </li>
+                    <li class="question_customer">
+                        <div class="question_customer_title">
+                            <div class="question_finish">답변완료</div>
+                            <div class="question_category">포장</div>
+                            <div class="question_main question_lock">선물 포장 옵션이 궁금해요!</div>
+                            <div class="question_name">정**</div>
+                            <div class="question_date">2030.02.24</div>
+                        </div>
+                        <div class="question_customer_detail">
+
+                            <form>
+                                <span class="password_label">비밀번호</span>
+                                <input class="password_input" type="password" name="question_password"
+                                    autocomplete="off">
+                                <button class="password_confirm">확인</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="question_planning">
+                        <div class="question_answer question_lock">&#91;플래닝&#93; 선물 포장 옵션이 궁금해요!</div>
+                        <div class="question_answer_detail">
+                            <form>
+                                <span class="password_label">비밀번호</span>
+                                <input class="password_input" type="password" name="question_password"
+                                    autocomplete="off">
+                                <button class="password_confirm">확인</button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="delivery_anchor" class="pagination QandA_pagination">
+                    <li class="pagination_checked">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="bottom_all">
+        <div id="delivery">
+            <div class="container">
+                <div class="left_container">
+                    <div class="left_container_title">
+                        <h3>배송정보</h3>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="right_container">
+                    <table>
+                        <tr>
+                            <th class="big_th">일반배송</th>
+                            <td class="middle_td">4,000원</td>
+                            <td class="small_td">60,000원 이상 구매시 무료배송</td>
+                        </tr>
+                        <tr>
+                            <th class="big_th">퀵 배송</th>
+                            <td class="middle_td">7,000원</td>
+                            <td class="small_td">현재 경기도 일부지역에서 시험운영 중으로, 전국 확대 예정입니다.</td>
+                        </tr>
+                        <tr>
+                            <th class="big_th">도서산간</th>
+                            <td class="middle_td">9,000원</td>
+                            <td class="small_td">지역에 따라 배송이 불가능할 수 있습니다. 주문 전 문의 부탁드립니다.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="refund">
+            <div class="container">
+                <div class="left_container">
+                    <div class="left_container_title">
+                        <h3>교환/환불</h3>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="right_container">
+                    <table>
+                        <tr>
+                            <th class="big_th">일반배송시 반품배송비</th>
+                            <td class="middle_td">4,000원</td>
+                        </tr>
+                        <tr>
+                            <th class="big_th">퀵 배송시 반품배송비</th>
+                            <td class="middle_td">8,000원</td>
+                        </tr>
+                        <tr>
+                            <th class="big_th">도서산간 배송시 반품배송비</th>
+                            <td class="middle_td">10,000원</td>
+                        </tr>
+                        <tr>
+                            <th class="big_th">보내실 곳</th>
+                            <td class="middle_td">(주)플래닝</td>
+                            <td class="small_td">경기도 수원시 수원로 123-12-3(주)플래닝</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div id="footer_first">
+                <a href="#">
+                    <div id="white_logo">
+                        <div id="white_logo_background">
+                            <img id="white_logo_img" src="img/main/white_logo.png" alt="white_logo">
+                        </div>
+                        <p id="white_logo_text">PLANNING</p>
+                    </div>
+                </a>
+                <div id="contact_icon">
+                    <a href="#"><img src="img/main/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="img/main/kakaotalk.png" alt="kakaotalk"></a>
+                    <a href="#"><img src="img/main/youtube.png" alt="youtube"></a>
+                </div>
+            </div>
+            <p id="notice">본 사이트는 개인 포트폴리오를 위해 제작된 사이트로 상업용 사이트가 아닙니다.</p>
+        </div>
+        <div id="footer_line"></div>
+    </footer>
+    <script src="sub.js"></script>
+</body>
+
+</html>
