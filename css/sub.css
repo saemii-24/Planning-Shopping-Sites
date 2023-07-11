@@ -76,6 +76,10 @@ img {
     font-weight: 700;
     font-size: 16px;
 }
+#go_shopping_bag:hover,
+#continue_shopping:hover{
+    border: 1px solid #609966;
+}
 
 article{
     padding-top: 105px;
@@ -357,7 +361,10 @@ line-height: 160%;
     border-radius: 5px;
     display: none;
 }
-
+#quantity_plus:hover,
+#quantity_minus:hover{
+    background-color: #EDF1D6;
+}
 .quantity_close{
     display: none;
 }
@@ -397,6 +404,7 @@ line-height: 160%;
     background-color: white;
     border-radius: 20px;
     font-weight: 900;
+    border:1px solid rgba(35, 39, 34,0.3);
 }
 #option_price{
     text-align: right;
@@ -673,22 +681,28 @@ width: 60px;
 height: 60px;
 border-radius: 30px;
 border:none;
-background-color: #EDF1D6;
 font-size: 20px;
 position:absolute;
 top:184px;
 left:20px;
+background-color: white;
+border:1px solid rgba(35, 39, 34,0.3);
 }
 #recommend_right{
 width: 60px;
 height: 60px;
 border-radius: 30px;
 border:none;
-background-color: #EDF1D6;
+background-color: white;
+border:1px solid rgba(35, 39, 34,0.3);
 font-size: 20px;
 position:absolute;
 top:184px;
 right:20px;
+}
+#recommend_left:hover,
+#recommend_right:hover{
+    background-color: #EDF1D6;
 }
 #article_bottom .container{
     position: relative;

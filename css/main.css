@@ -473,6 +473,17 @@ article {
     opacity: 1;
 }
 
+#best_plant_imgbox img{
+    transition: all 1s;
+}
+
+.best_plant_box:hover>.best_plant_picture{
+    transform: scale(1.1);
+}
+#best_plant_box_first:hover>img[alt="best_plant_1"]{
+    transform: scale(1.1);
+}
+
 #best_plant_price_first {
     color: white;
     font-size: 28px;
@@ -501,13 +512,7 @@ article {
     position: relative;
 }
 
-#best_plant_box_first>a>img {
-    transition: all 1s;
-}
 
-#best_plant_box_first:hover>a>img[alt="best_plant_1"] {
-    transform: scale(1.1);
-}
 
 .best_plant_box {
     width: 282px;

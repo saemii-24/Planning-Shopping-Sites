@@ -19,7 +19,7 @@ shoppingContinue.addEventListener('click',()=>{
 })
 
 
-//하트 껐다 켜기
+//찜 버튼
 const heart = document.querySelector('#heart_heart');
 const circle = document.querySelector('#heart_click');
 circle.onclick = function () {
@@ -41,7 +41,7 @@ function hideTooltip() {
 }
 
 
-//quantity 박스 수량 가격 변경
+//quantity 박스 수량 & 가격 변경
 const quanMinus = document.getElementById('quantity_minus');
 const quanPlus = document.getElementById('quantity_plus');
 let quanCurrent = document.getElementById('quantity_current');
@@ -66,8 +66,7 @@ function quanCount(event){
   quanCurrent.innerText = num;
 }
 
-
-//x누르면 quantity박스 사라짐
+//x누르면 quantity박스 사라지며, 값 초기화
 const quantityBox = document.getElementById('article_option_quantity');
 const closeIcon = document.getElementById('close_icon');
 closeIcon.onclick = function(){
@@ -109,7 +108,7 @@ pink.addEventListener('click', function() {
 
 
 
-//nav박스 이동에 따라 보더 칠해지기 -> 스크롤 위치에 따라 클래스 넣었다 빼기
+//요소 등장하면 nav 색상 변경
 
 const product = document.getElementById('article_middle_all');
 const productNav = document.getElementById('nav_product'); 
@@ -132,7 +131,7 @@ function navCheck(element, elementNav){
   }else{
     elementNav.classList.remove('navigation_line');
   }
-  }
+}
 
 //button 누를때 알맞는 색상의 꽃 보여주기
 const whiteButton = document.getElementById('white_button');
@@ -185,10 +184,8 @@ const items = document.getElementById('recommend_align');
 let boxLeft = 0;
 let currentIndex = 0;
 
-
 prevButton.addEventListener('click', prev);
 nextButton.addEventListener('click', next);
-
 
 function next() {
     if (currentIndex >= 0 && currentIndex < 4) {
