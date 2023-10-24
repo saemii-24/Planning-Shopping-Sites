@@ -709,9 +709,9 @@ img[alt="review_more"]:hover {
     transition: all 0.5s;
 }
 
-.review_box:hover::after {
+/* .review_box:hover::after {
     backdrop-filter: blur(5px);
-}
+} */
 
 
 .review::after {
