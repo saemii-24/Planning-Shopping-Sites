@@ -31,7 +31,7 @@
   </tr>
   <tr>
     <td><img style="width:300px" src="https://github.com/saemii-24/project_1/assets/139088277/b6f88275-9d84-42bc-a529-bc15a14423ce" alt="hover 애니메이션"></td>
-    <td><img style="width:300px"  src="링크2" alt="제품 선택 버튼"></td>
+    <td><img style="width:300px" src="https://github.com/saemii-24/project_1/assets/139088277/9592efa6-fec2-4d23-b344-9c6d08f19991" alt="제품 선택 버튼"></td>
     <td><img style="width:300px" src="https://github.com/saemii-24/project_1/assets/139088277/95155e8a-e57e-4711-9cb8-8435510787d8" alt="가격·상품 카운트"></td>
   </tr>
 </table>
@@ -44,7 +44,7 @@
   </tr>
   <tr>
     <td><img style="width:300px" src="https://github.com/saemii-24/project_1/assets/139088277/8946c49f-64f3-4709-aa98-2bf7a680279f" alt="장바구니 모달"></td>
-    <td><img style="width:300px" src="링크2" alt="버튼클릭/이미지 변경"></td>
+    <td><img style="width:300px" src="https://github.com/saemii-24/project_1/assets/139088277/7bdd02d0-63c0-4aec-bcbb-752d78795d6c" alt="버튼클릭/이미지 변경"></td>
     <td><img style="width:300px" src="https://github.com/saemii-24/project_1/assets/139088277/58f217f6-61a8-4655-8efe-3064e9a25dc3" alt="페이지 내비게이션"></td>
   </tr>
 </table>
