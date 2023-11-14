@@ -30,7 +30,7 @@
     <th style="width:300px">가격·상품 카운트</th>
   </tr>
   <tr>
-    <td><img src="https://drive.google.com/drive/u/3/folders/130dAKAhjA4BhE4I8pwhmmPCmgFxxCccB" alt="hover 애니메이션"></td>
+    <td><img src="https://github.com/saemii-24/project_1/assets/139088277/b6f88275-9d84-42bc-a529-bc15a14423ce" alt="hover 애니메이션"></td>
     <td><img src="링크2" alt="제품 선택 버튼"></td>
     <td><img src="링크3" alt="가격·상품 카운트"></td>
   </tr>
