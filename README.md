@@ -23,7 +23,7 @@
 
 
 ## 주요기능
-<table style="width:100%">
+<table>
   <tr>
     <th style="width:300px">hover 애니메이션</th>
     <th style="width:300px">제품 선택 버튼</th>
@@ -36,7 +36,7 @@
   </tr>
 </table>
 
-<table style="width:100%">
+<table>
   <tr>
     <th style="width:300px">장바구니 모달</th>
     <th style="width:300px">버튼클릭/이미지 변경</th>
