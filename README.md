@@ -48,3 +48,4 @@
     <td><img style="width:300px" src="https://github.com/saemii-24/project_1/assets/139088277/58f217f6-61a8-4655-8efe-3064e9a25dc3" alt="페이지 내비게이션"></td>
   </tr>
 </table>
+
